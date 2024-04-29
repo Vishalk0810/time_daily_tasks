@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 margin: EdgeInsets.only(top: 70),
                 height: 70,
-                width: 200,
+                width: 350,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(color: Colors.black,width: 1)
@@ -49,6 +49,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     ElevatedButton(onPressed: () {
         
                     }, child: Text('Heyyy...')),
+                    ElevatedButton(onPressed: () {
+
+                    }, child: Row(
+                      children: [
+                        Icon(Icons.add),
+                        Text('Heyyy...'),
+                      ],
+                    )),
                   ],
                 ),
               ),
@@ -56,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 margin: EdgeInsets.only(top: 40),
                 height: 70,
-                width: 200,
+                width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black,width: 1)
@@ -68,8 +76,16 @@ class _HomeScreenState extends State<HomeScreen> {
         
                     }, child: Icon(Icons.add)),
                     OutlinedButton(onPressed: () {
-        
+
                     }, child: Text('Hello...')),
+                    OutlinedButton(onPressed: () {
+
+                    }, child: Row(
+                      children: [
+                        Icon(Icons.add),
+                        Text('Hello...'),
+                      ],
+                    )),
                   ],
                 ),
               ),
@@ -77,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 margin: EdgeInsets.only(top: 40),
                 height: 70,
-                width: 200,
+                width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black,width: 1)
@@ -91,6 +107,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     FloatingActionButton(onPressed: () {
         
                     },child: Text('Hii...')),
+                    FloatingActionButton(onPressed: () {
+
+                    },child: Row(
+                      children: [
+                        Icon((Icons.add)),
+                        Text('Hii...'),
+                      ],
+                    )),
                   ],
                 ),
               ),
@@ -98,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 margin: EdgeInsets.only(top: 40),
                 height: 70,
-                width: 200,
+                width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black,width: 1)
@@ -112,6 +136,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     TextButton(onPressed: () {
         
                     }, child: Text('Hlo...')),
+                    TextButton(onPressed: () {
+
+                    }, child: Row(
+                      children: [
+                        Icon(Icons.add),
+                        Text('Hlo...'),
+                      ],
+                    )),
                   ],
                 ),
               ),
@@ -119,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 margin: EdgeInsets.only(top: 40),
                 height: 70,
-                width: 200,
+                width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black,width: 1)
@@ -133,6 +165,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     FilledButton(onPressed: () {
         
                     }, child: Text('Hey...')),
+                    FilledButton(onPressed: () {
+
+                    }, child: Row(
+                      children: [
+                        Icon(Icons.add),
+                        Text('Hey...'),
+                      ],
+                    )),
                   ],
                 ),
               ),
@@ -140,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 margin: EdgeInsets.only(top: 40),
                 height: 70,
-                width: 200,
+                width: 350,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.black,width: 1)
@@ -152,8 +192,16 @@ class _HomeScreenState extends State<HomeScreen> {
         
                     }, child: Icon(Icons.add)),
                     FilledButton.tonal(onPressed: () {
-        
+
                     }, child: Text('Hlo...')),
+                    FilledButton.tonal(onPressed: () {
+
+                    }, child: Row(
+                      children: [
+                        Icon(Icons.add),
+                        Text('Hlo...'),
+                      ],
+                    )),
                   ],
                 ),
               ),
