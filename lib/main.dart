@@ -207,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
         
               Container(
-                margin: EdgeInsets.only(top: 40),
+                margin:  EdgeInsets.only(top: 40),
                 height: 70,
                 width: 200,
                 decoration: BoxDecoration(
