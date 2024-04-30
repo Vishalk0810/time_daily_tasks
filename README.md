@@ -36,7 +36,7 @@ samples, guidance on mobile development, and a full API reference.
 
 - `Future.delated :-` The Dart Delay function's Return Value is a 'Future'. After the delay, the 'Future' is completed with the value from evaluating computation(). If computation is omitted, it instead completes with the value null.
 
-# Example
+## Example
 
 ```bash
 import 'dart:io';
@@ -64,7 +64,7 @@ void main() {
 
 - When a Function calls itself is known as Recursion
 
-# Example
+## Example
 
 ```bash
 import 'dart:async';
@@ -90,7 +90,7 @@ void main()
 
 - A countdown timer that can be configured to fire once or repeatedly.
 
-# Example
+## Example
 
 ```bash
 import 'dart:async';
@@ -111,6 +111,7 @@ void main(){
 
 - A periodic timer is particularly powerful because it allows you to schedule a callback to be executed repeatedly with a specified duration between each call.
 
+##Example
 ```bash
 
 import 'dart:io';
