@@ -72,5 +72,38 @@ A countdown timer that can be configured to fire once or repeatedly.
 
 # Example
 
+```bash
+import 'dart:async';
+
+void main(){
+
+ print("Hello Dart...");
+
+ Timer(Duration(seconds: 3), () { 
+   print("Hello Flutter...");
+ });
+
+ print("Hello Python...");
+}
+```
+
+# 7).What is Timer.periodic and use with Example? 
+
+A periodic timer is particularly powerful because it allows you to schedule a callback to be executed repeatedly with a specified duration between each call.
+
+```bash
+
+import 'dart:io';
+import 'dart:async';
+void main()
+{
+    Timer.periodic(
+        Duration(seconds: 1), 
+        (timer){
+            print("Hello Flutter");
+        }, 
+        );
+}
+```
 
    
