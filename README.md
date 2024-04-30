@@ -24,11 +24,11 @@ samples, guidance on mobile development, and a full API reference.
 
    # 1).What is  Asynchronous Programming?
 
-Asynchronous programming is a programming paradigm that allows tasks or operations to run independently and concurrently, without waiting for each other to complete before moving on to the next task.
+- Asynchronous programming is a programming paradigm that allows tasks or operations to run independently and concurrently, without waiting for each other to complete before moving on to the next task.
 
 # 2).What is Future Class ?
 
-A Future represents a value that may not be available yet. It encapsulates an asynchronous operation and provides a way to handle the result or error when it becomes available.
+- A Future represents a value that may not be available yet. It encapsulates an asynchronous operation and provides a way to handle the result or error when it becomes available.
 
 # 3).What is Duration class & Future.delayed() constructor with Example ?
 
@@ -62,7 +62,7 @@ void main() {
 
 # 5).What is Recursion ? With Example.
 
-When a Function calls itself is known as Recursion
+- When a Function calls itself is known as Recursion
 
 # Example
 
@@ -88,7 +88,7 @@ void main()
 
 # 6).What is Timer class with example? 
 
-A countdown timer that can be configured to fire once or repeatedly.
+- A countdown timer that can be configured to fire once or repeatedly.
 
 # Example
 
@@ -109,7 +109,7 @@ void main(){
 
 # 7).What is Timer.periodic and use with Example? 
 
-A periodic timer is particularly powerful because it allows you to schedule a callback to be executed repeatedly with a specified duration between each call.
+- A periodic timer is particularly powerful because it allows you to schedule a callback to be executed repeatedly with a specified duration between each call.
 
 ```bash
 
