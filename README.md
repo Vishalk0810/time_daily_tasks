@@ -112,6 +112,7 @@ void main(){
 - A periodic timer is particularly powerful because it allows you to schedule a callback to be executed repeatedly with a specified duration between each call.
 
 ##Example
+
 ```bash
 
 import 'dart:io';
