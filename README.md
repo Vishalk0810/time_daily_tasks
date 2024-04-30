@@ -66,5 +66,11 @@ When a Function calls itself is known as Recursion
 
 # Example
 
+# 6).What is Timer class with example? 
+
+A countdown timer that can be configured to fire once or repeatedly.
+
+#Example
+
 
    
