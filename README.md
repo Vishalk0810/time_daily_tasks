@@ -66,6 +66,26 @@ When a Function calls itself is known as Recursion
 
 # Example
 
+```bash
+import 'dart:async';
+import 'dart:io';
+void main()
+{
+  var count=5;
+
+  Timer.periodic(Duration(seconds: 1), (timer) { 
+     print(timer.tick);
+     count--;
+     if(count==0)
+     {
+      print('End');
+      timer.cancel();
+     }
+  });
+}
+
+```
+
 # 6).What is Timer class with example? 
 
 A countdown timer that can be configured to fire once or repeatedly.
