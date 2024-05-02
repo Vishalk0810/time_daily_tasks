@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:math';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:time_daily_tasks/utils/global.dart';
 
@@ -91,6 +93,69 @@ class _DigitalClockState extends State<DigitalClock> {
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
                 fontSize: 30,
+              ),
+            ),
+            SizedBox(height: 30,),
+            Container(
+              height: 210,
+              width: 210,
+              decoration: BoxDecoration(
+                border: Border.all(width: 4,color: Colors.white),
+                shape: BoxShape.circle,
+              ),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  ...List.generate(60, (index) => Transform.rotate(
+                      angle: ((index + 1)*6*pi)/180,
+                    child: ((index + 1)%5==0)
+                      ? VerticalDivider(
+                      thickness: 3,
+                      indent: 3,
+                      endIndent: 180,
+                      color: Colors.red,
+                    )
+                        :VerticalDivider(
+                      thickness: 2,
+                      indent: 3,
+                      endIndent: 190,
+                      color: Colors.white,
+                    )
+                  )),
+                  Container(
+                    height:10,
+                    width: 10,
+                    decoration: BoxDecoration(
+                      color: Colors.cyan,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                  Transform.rotate(
+                    angle: (dateTime.hour % 12 + dateTime.minute /60) * 30 * pi/180,
+                    child: VerticalDivider(
+                      thickness: 4,
+                      indent: 55,
+                      endIndent: 100,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Transform.rotate(
+                    angle: dateTime.minute * (6 *pi)/180,
+                    child: VerticalDivider(
+                      thickness: 3,
+                      indent: 40,
+                      endIndent: 100,
+                    ),
+                  ),
+                  Transform.rotate(
+                    angle: dateTime.second * (6 *pi)/180,
+                    child: VerticalDivider(
+                      thickness: 2,
+                      indent: 30,
+                      endIndent: 100                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
