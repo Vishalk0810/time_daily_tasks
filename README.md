@@ -115,10 +115,21 @@ void main()
 
 <img src = "https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/12c5553b-39d3-41c7-9730-7aa17ef7ccba" width = 22%  height = 35%>
 
-   <br>
+ <br>
 
 # Analogue Clock
 
 <img src = "https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/492c3d5f-2181-4341-a704-71eec565761a" width = 22%  height = 35%>
 
-   <br>
+<br>
+
+<video src="https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/c9170a31-f9dd-4387-a07f-181571f51ba6">
+
+<br>
+
+
+
+
+
+
+
