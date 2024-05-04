@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:time_daily_tasks/utils/global.dart';
 
 class DigitalClock extends StatefulWidget {
@@ -45,8 +46,7 @@ class _DigitalClockState extends State<DigitalClock> {
           case 7:
             day = 'Sunday';
             break;
-        }
-        ;
+        };
       });
     });
     return Scaffold(
@@ -63,6 +63,9 @@ class _DigitalClockState extends State<DigitalClock> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 400,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -95,66 +98,32 @@ class _DigitalClockState extends State<DigitalClock> {
                 fontSize: 30,
               ),
             ),
-            SizedBox(height: 30,),
+          SizedBox(
+            height: 278,
+          ),
             Container(
-              height: 210,
-              width: 210,
+              height: 100,
+              width: 400,
               decoration: BoxDecoration(
-                border: Border.all(width: 4,color: Colors.white),
-                shape: BoxShape.circle,
+                color: Colors.black
               ),
-              child: Stack(
-                alignment: Alignment.center,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  ...List.generate(60, (index) => Transform.rotate(
-                      angle: ((index + 1)*6*pi)/180,
-                    child: ((index + 1)%5==0)
-                      ? VerticalDivider(
-                      thickness: 3,
-                      indent: 3,
-                      endIndent: 180,
-                      color: Colors.red,
-                    )
-                        :VerticalDivider(
-                      thickness: 2,
-                      indent: 3,
-                      endIndent: 190,
-                      color: Colors.white,
-                    )
-                  )),
-                  Container(
-                    height:10,
-                    width: 10,
-                    decoration: BoxDecoration(
-                      color: Colors.cyan,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: (dateTime.hour % 12 + dateTime.minute /60) * 30 * pi/180,
-                    child: VerticalDivider(
-                      thickness: 4,
-                      indent: 55,
-                      endIndent: 100,
-                      color: Colors.red,
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: dateTime.minute * (6 *pi)/180,
-                    child: VerticalDivider(
-                      thickness: 3,
-                      indent: 40,
-                      endIndent: 100,
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: dateTime.second * (6 *pi)/180,
-                    child: VerticalDivider(
-                      thickness: 2,
-                      indent: 30,
-                      endIndent: 100                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ,
-                    ),
-                  ),
+                  ElevatedButton(onPressed: () {
+
+                  }, child: Text('Digital',style: TextStyle(color: Colors.black)),),
+                  ElevatedButton(onPressed: () {
+
+                    Navigator.pushNamed(context, '/analogue');
+
+                  }, child: Text('Analogue',style: TextStyle(color: Colors.black)),),
+                  ElevatedButton(onPressed: () {
+
+                    Navigator.pushNamed(context, '/strap');
+
+                  }, child: Text('Strap',style: TextStyle(color: Colors.black),),)
+
                 ],
               ),
             ),
