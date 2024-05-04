@@ -1,21 +1,4 @@
-# time_daily_tasks
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-# buttons
+# buttons Task
  <img src = "https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/264490e9-0713-455c-a605-634e07feaebc" width = 22%  height = 35%>
 
    <br>
@@ -128,4 +111,25 @@ void main()
 }
 ```
 
-   
+# Digital Clock
+
+<img src = "https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/12c5553b-39d3-41c7-9730-7aa17ef7ccba" width = 22%  height = 35%>
+
+ <br>
+
+# Analogue Clock
+
+<img src = "https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/492c3d5f-2181-4341-a704-71eec565761a" width = 22%  height = 35%>
+
+<br>
+
+<video src="https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/c9170a31-f9dd-4387-a07f-181571f51ba6">
+
+<br>
+
+
+
+
+
+
+
