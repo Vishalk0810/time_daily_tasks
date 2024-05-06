@@ -123,10 +123,6 @@ void main()
 
 <br>
 
-<video src="https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/c9170a31-f9dd-4387-a07f-181571f51ba6">
-
-<br>
-
 # Clock App
 
 <img src = "https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/c56a827f-506d-42ca-b06d-c9c34e6297c6" width = 22%  height = 35%>
@@ -138,6 +134,14 @@ void main()
 <br>
 
 <img src = "https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/22514ba7-4f6e-4b85-bd67-4c20208a7e20" width = 22%  height = 35%>
+
+<br>
+
+<video src="https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/c9170a31-f9dd-4387-a07f-181571f51ba6">
+
+<br>
+
+<video src="https://github.com/Vishalk0810/time_daily_tasks/assets/149374506/c9170a31-f9dd-4387-a07f-181571f51ba6">
 
 <br>
 
