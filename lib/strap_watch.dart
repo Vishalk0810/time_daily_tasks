@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -85,15 +84,14 @@ class _StrapWatchState extends State<StrapWatch> {
           case 12:
             month = 'December';
             break;
-        }
-        ;
+        };
       });
     });
     return Scaffold(
       body: Container(
           height: double.infinity,
           width: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
               image: NetworkImage(
                 'https://images.unsplash.com/photo-1584888914138-160eaadbb076?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D ',
@@ -115,7 +113,7 @@ class _StrapWatchState extends State<StrapWatch> {
                     width: 243,
                     child: CircularProgressIndicator(
                       strokeWidth: 7,
-                      color: Colors.white,
+                      color: Colors.deepOrange,
                       value: dateTime.second/60,
                     ),
                   ),
@@ -124,7 +122,7 @@ class _StrapWatchState extends State<StrapWatch> {
                     width: 230,
                     child: CircularProgressIndicator(
                       strokeWidth: 7,
-                      color: Colors.amber,
+                      color: Colors.white,
                       value: dateTime.minute/60,
                     ),
                   ),
@@ -133,7 +131,7 @@ class _StrapWatchState extends State<StrapWatch> {
                     width: 216,
                     child: CircularProgressIndicator(
                       strokeWidth: 7,
-                      color: Colors.red,
+                      color: Colors.green,
                       value: ((dateTime.hour % 12 + dateTime.minute / 60)/12),
                     ),
                   ),
@@ -141,7 +139,7 @@ class _StrapWatchState extends State<StrapWatch> {
                     children: [
                       Text(
                         day,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 30,
                           fontWeight: FontWeight.w600,
@@ -149,7 +147,7 @@ class _StrapWatchState extends State<StrapWatch> {
                       ),
                       Text(
                         '$month ${dateTime.day},${dateTime.year}',
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
                           fontSize: 20,
@@ -160,7 +158,7 @@ class _StrapWatchState extends State<StrapWatch> {
                         children: [
                           Text(
                             '${dateTime.hour%12} : ${dateTime.minute} : ${dateTime.second}',
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.w600,
                               fontSize: 30,
@@ -170,7 +168,7 @@ class _StrapWatchState extends State<StrapWatch> {
                             padding: const EdgeInsets.only(left: 5, top: 7),
                             child: Text(
                               meridian,
-                              style: TextStyle(color: Colors.white),
+                              style: const TextStyle(color: Colors.white),
                             ),
                           ),
                         ],
@@ -179,13 +177,13 @@ class _StrapWatchState extends State<StrapWatch> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 278,
               ),
               Container(
                 height: 100,
                 width: 400,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.black
                 ),
                 child: Row(
@@ -195,15 +193,15 @@ class _StrapWatchState extends State<StrapWatch> {
 
                       Navigator.pushNamed(context, '/');
 
-                    }, child: Text('Digital',style: TextStyle(color: Colors.black)),),
+                    }, child: const Text('Digital',style: TextStyle(color: Colors.black)),),
                     ElevatedButton(onPressed: () {
 
                       Navigator.pushNamed(context, '/analogue');
 
-                    }, child: Text('Analogue',style: TextStyle(color: Colors.black)),),
+                    }, child: const Text('Analogue',style: TextStyle(color: Colors.black)),),
                     ElevatedButton(onPressed: () {
 
-                    }, child: Text('Strape',style: TextStyle(color: Colors.black),),)
+                    }, child: const Text('Strape',style: TextStyle(color: Colors.black),),)
 
                   ],
                 ),
